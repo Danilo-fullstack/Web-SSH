@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #7159c1;
+}
+section.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    background-color: white;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 40px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+form .input_cadastro {
+    margin-bottom: 20px;
+    text-align: left;
+}
+form .input_cadastro label {
+    font-size: 16px;
+    color: darkslateblue;
+}
+form .input_cadastro input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    padding: 7px;
+    color: #7159c1;
+    border-radius: 3px;
+    border: 1px solid #ccddef;
+    outline-color: #7159c1;
+    margin: auto;
+}
+form .botao {
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #7159c1;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+    cursor: pointer;
+}
+form a.botao {
+    display: block;
+    width: 122px;
+    font-size: 10pt;
+    font-weight: normal;
+    border: none;
+    background-color: #7159c1;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 5px;
+}
+.cadastrado, .ja-existe {
+    padding: 10px 0;
+    margin-top: 3%;
+    font-weight: normal;
+    font-size: 11pt;
+    border-radius: 5px;
+    background-color: #6137a5;
+    color: white;
+}
+.cadastrado a {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: underline;
+}
+.ja-existe {
+    box-shadow: 0.5px 0.5px 8px 1px rgba(179, 11, 11, 0.342);
+    background-color: #cc3636ef;
+}

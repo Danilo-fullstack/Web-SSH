@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* ------------  ARQUIVO MOBILE  ------------- */
+
+section div {
+    padding: 12%;
+    border-radius: 8px;
+    font-size: 16pt;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 6px .5px rgba(0, 0, 0, 0.425);
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
+}
+section div.app-azul:hover {
+    background-color: #465962;
+}
+section div.app-azul:hover h4 {
+    color: #efefef;
+}
+section div.app-branco:hover {
+    background-color: #c5bbbb;
+}
+.icons-app {
+    width: 220px;
+    height: 220px;
+}
+
+/* =========================================== */
+
+/* ------------  ARQUIVO DESKTOP  ------------ */
+
+@media screen and (min-width: 768px) {
+    section {
+        flex-direction: row;
+    }
+    section div {
+        padding: 7%;
+        margin: auto;
+    }
+}
+
+/* =========================================== */

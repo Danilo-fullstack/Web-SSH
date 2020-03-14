@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* ----------  CONFIGURAÇÃO GLOBAL  ---------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #6753b1;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+    text-align: center;
+    font-size: 12pt;
+}
+a {
+    text-decoration: none;
+}
+
+/* =========================================== */
+
+/* -----------  CABEÇALHO MOBILE  ------------ */
+header {
+    background-color: rgb(32, 32, 32);
+}
+.btnMenu_open {
+    display: absolute;
+    margin-left: 3%;
+    margin-top: -6%;
+}
+.title_logo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: block;
+    display: table;
+    margin: 0 auto;
+    margin-top: 2%;
+    color: rgb(245, 245, 245);
+    font-size: 22pt;
+}
+.logo span {
+    color: #6753b1;
+}
+
+/**/
+header.cabecalho {
+    background-color: rgb(32, 32, 32);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 8px -3px black;
+}
+header.cabecalho nav.wrap-menu h1 {
+    padding-top: 4px;
+}
+.logo {
+    color: rgb(245, 245, 245);
+    font-size: 22pt;
+}
+.logo span {
+    color: #7159c1;
+}
+nav.wrap-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+}
+nav.wrap-menu ul li a {
+    color: rgb(245, 245, 245);
+    font-size: 11pt;
+    padding: 5px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+/* =========================================== */
+
+/* ----------  CABEÇALHO DESKTOP  ------------ */
+
+@media screen and (min-width: 768px) {
+    .btnMenu {
+        text-indent: -9999px;
+        display: none !important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li {
+        border-bottom: 0px;
+    }
+    header.cabecalho nav.wrap-menu h1 {
+        padding-top: 0px;
+    }
+    nav.wrap-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 55px;
+    }
+    nav.wrap-menu ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav.wrap-menu ul li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav.wrap-menu ul li a {
+        font-size: 10.6pt;
+        color: white;
+        transition: all .1s;
+    }
+    nav.wrap-menu ul li a:hover {
+        background-color: rgb(32, 32, 32);
+        color: rgb(241, 241, 241);
+        border-bottom: .5vh solid darkslateblue;
+        border-radius: 1px;
+    }
+    header nav.wrap-menu ul li a#blogin {
+        background-color: #7159c1;
+        border-radius: 5px;
+    }
+    header nav.wrap-menu ul li a#blogin:hover {
+        border: none;
+        background-color: darkslateblue;
+    }
+}
+
+/* ============================================= */
+
+/* --------------  CORPO MOBILE  --------------- */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 480px;
+}
+section div.bemvindo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    padding: 12%;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px .1px rgba(0, 0, 0, 0.322);
+}
+
+section div.bemvindo h2 {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.842);
+}
+section div.bemvindo h2 span {
+    color: darkslateblue;
+}
+section div.bemvindo h3 {
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+/* ============================================ */
+
+/* -------------  CORPO DESKTOP  -------------- */
+
+@media screen and (min-width: 768px) {
+    section {
+        min-height: 580px;
+    }
+    section div.bemvindo {
+        margin: auto 150px;
+    }
+    section div.bemvindo h2 {
+        font-size: 28pt;
+    }
+    section div.bemvindo h3 {
+        font-size: 15pt;
+    }
+}
+
+/* ============================================ */
+
+/* -------------  RODAPÉ MOBILE  -------------- */
+
+footer {
+    min-height: 100px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer.rodape div.icons-rodape {
+    padding-top: 40px;
+}
+footer.rodape div.icons-rodape svg {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+footer.rodape div.icons-rodape svg.svg-inline--fa {
+    width: 23px;
+    height: 23px;
+}
+footer.rodape div.icons-rodape svg.svg-inline--fa:hover path {
+    fill: darkslateblue;
+}
+footer p {
+    font-size: 10pt;
+    color: rgb(245, 245, 245);
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+/* ============================================ */
+
+/* -------------  RODAPÉ DESKTOP  -------------- */
+
+@media screen and (min-width: 768px) {
+    footer.rodape div.icons-rodape svg.svg-inline--fa path {
+        transition: fill .3s;
+    }
+}
+
+/* ====================================== */

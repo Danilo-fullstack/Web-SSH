@@ -1,0 +1,28 @@
+.wrap-menu {
+    background-color: rgb(32, 32, 32);
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        position: absolute;
+        width: 100% ;
+        height: 100% ;
+        top: 0 ;
+        left: 0 ;
+        transform: translateX(-100%) ;
+        transition: transform 200ms linear ;
+        background-color: #5a3dc5;
+    }
+    }
+    .menu_open {
+        transform: translateX(0) ;
+    }
+    .menu-item {
+        padding: 20px 15px ;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.178) ;
+    }
+    .menu-item-action {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+    }

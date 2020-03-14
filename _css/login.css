@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+input {
+    background-color: rgba(0, 204, 255, 0.514);
+    border: none;
+    font-size: 22pt;
+}
+form p {
+    font-size: 16pt;
+}
+.botao{
+    border-radius: 3px;
+    background-color: rgba(0, 204, 255, 0.514);
+    font-size: 11pt;
+    font-weight: 500;
+    width: 130px;
+    margin: auto;
+}
+.botao {
+    padding: 10px 15px;
+}
+section div.bemvindo {
+    margin: auto;
+    padding: 5%;
+}

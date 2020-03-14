@@ -1,0 +1,14 @@
+.btnMenu {
+    display: block ;
+    background-repeat: no-repeat ;
+    text-indent: -9999px ;
+    padding: 20px 15px ;
+}
+.btnMenu_open {
+    background-image: url(../_img/burger_branco.svg) ;
+    background-position: 0 0 ;
+}
+.btnMenu_close {
+    background-image: url(../_img/burger_branco.svg) ;
+    background-position: 15px center ;
+}

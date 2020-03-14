@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+section.corpo div.bemvindo {
+	padding: 8%;
+	margin: 55px;
+}
+section.corpo div.bemvindo img#app-cloud {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	padding-bottom: 10px; 
+}
+section.corpo div.bemvindo p a {
+	font-size: 14pt;
+	font-weight: bolder;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px) {
+	section.corpo div.bemvindo img#app-cloud {
+		width: 150px;
+		height: 150px;
+	}
+	section.corpo div.bemvindo {
+		margin: auto;
+		padding: 7%;
+	}
+}
