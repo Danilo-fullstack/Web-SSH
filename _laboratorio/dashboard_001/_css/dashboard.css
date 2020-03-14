@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*	Cabeçalho	*/
+nav.nav-bar {
+	background-color: #1566;
+}
+ul.menu {
+	min-height: 12vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu-item {
+	background-color: none;
+	font-size: 18pt;
+	font-family: Arial, sans-serif;
+}
+.menu-item a {
+	color: #222;
+}
+
+/*	Corpo	*/
+section.corpo {
+	background-color: #aee;
+	min-height: 150vh;
+}
